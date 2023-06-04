@@ -26,7 +26,8 @@ struct node{
     struct node* next;
 };
 
-int how_many_dish(struct node* first){
+int how_many_dish(struct node* first)
+{
     if(first==NULL) return 0;
     int ans=0;
     while(first!=NULL){
@@ -34,10 +35,6 @@ int how_many_dish(struct node* first){
         first=first->next;
     }
     return ans;
-}
-
-int how_many_ingredient(struct node* temp_dish){
-    return temp_dish->num_ingredient;
 }
 
 void convert_letters(struct node* first, int num_dish)
